@@ -1,0 +1,92 @@
+body {
+	font-size: 14px;
+	line-height: 24px;
+	color: rgb(98,98,98); 
+	font-family: 'Playfair Display', serif;
+}
+
+header {
+	padding-top: 72px;
+}
+
+.header-items {
+	display: inline-block;
+	text-transform: uppercase;
+	margin-left: 150px; 
+	text-align: center;
+	list-style: none;
+}
+
+.header-item-link {	
+    text-decoration: none;
+    color: rgb(98,98,98);
+}
+
+.header-items a:hover {
+	color: rgb(3,169,244);
+}
+
+.main-content-items {
+	display: inline-block;
+	margin-left: 61px;
+	padding-left: 0px;
+	margin-top: 137px;
+/*	width: 421px
+	height: 477px; */
+	list-style: none; 
+
+}
+.main-content-text {
+	width: 421px
+	height: 67px;
+}
+.topic {
+	text-transform: uppercase;
+	font-weight: 200;
+	font-family: 'Ubuntu', serif;
+	color: rgb(199,193,182);
+	margin-top: 29px;
+}
+
+.main-content-headers {
+	font-size: 30px;
+	line-height: 36px; 
+	margin-top: 24px 
+ }
+
+footer {
+	text-align: center;
+ } 
+
+.footer-link {
+ 	font-size: 20px; 
+ 	line-height: 24px;
+ 	font-family: 'Playfair Display', serif;
+	color: rgb(98,98,98);
+	text-decoration: none;
+}
+
+button {
+	background-color: white;
+	border-style: 1px solid;
+	border-color: rgb(98,98,98);
+	margin-top: 58px; 
+
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+nput[type="radio"].visually-hidden {
+	
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin:-1px;
+	border: 0px;
+	padding: 0px;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip:rect(0 0 0 0);
+	overflow: hidden;
+}
