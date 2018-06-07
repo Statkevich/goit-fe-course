@@ -1,5 +1,5 @@
 .header {
- 	 padding-top: 42px;
+ 	 padding-top: 42px; 
  	 width: 1110px;
  }
  
@@ -34,7 +34,7 @@ h1 {
 	color: #48c9b0;
 }
 
-
+/* section one */
 .section-one {
 	width: 1110px; 
 }
@@ -45,7 +45,7 @@ h1 {
 }
 
 
-h2 {
+.header-name {
 	font-size: 48px;
 	color: #515151;
 	line-height: 32px;
@@ -55,7 +55,7 @@ h2 {
 }
 
 
-h2::after {
+.header-name::after {
 	content:" "; 
 	display: block;
 	margin: auto;
@@ -88,7 +88,6 @@ h2::after {
 
 .product-item:nth-child(1n+5) {
 	margin-top: 30px;
-	margin-bottom: -4px; 
 } 
 
 
@@ -96,10 +95,12 @@ h2::after {
 	height: 322px; 
 }
 
+.img {
+	display:block;
+}
 
 .product-name-price {
 	height: 40px; 
-	font-size: 0px;
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #323232;
@@ -125,7 +126,7 @@ h2::after {
 	padding-top: 4px;
 	background-color: #8c8c8c; 
 	color: #ffffff;
-	font-family: 'Roboto black', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	line-height: 32px;
 	letter-spacing: -0.02em; 
@@ -196,7 +197,7 @@ background-color: #7fd9c7;
 	height: 51px;
 	margin-top: 18px;
 	margin-bottom: 82px;
-	border-radius: 2px; 
+	border-radius: 10px; 
 	border-color: #48c9b0;
 	box-sizing: border-box;
    	text-align: center;
