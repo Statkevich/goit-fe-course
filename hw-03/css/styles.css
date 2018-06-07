@@ -52,7 +52,6 @@ header {
 
 .main-content-text {
 	width: 421px
-	height: 67px;
 }
 
 .topic {
@@ -64,6 +63,7 @@ header {
 }
 
 .main-content-headers {
+	font-family: 'Playfair Display', serif;
 	font-size: 30px;
 	line-height: 36px; 
 	margin-top: 24px; 
@@ -76,9 +76,8 @@ header {
 button {
 	display: block;
 	margin: auto;
-	width: 164px;
-	height: 60px;
 	box-sizing: border-box;
+	padding: 19px 35px;
     background-color: rgb(255,255,255);
 	border-style: 1px solid;
 	border-color: rgb(98,98,98);
