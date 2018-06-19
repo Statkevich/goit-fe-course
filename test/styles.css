@@ -1,0 +1,32 @@
+body {
+	font-size: 14px;
+	line-height: 24px;
+	color: rgb(98,98,98); 
+	font-family: 'Playfair Display', serif;
+	min-height: 100vh;
+}
+
+img .wrapper {
+	padding-top: 72px;
+}
+
+.main-topic {
+	text-transform: uppercase;
+	font-weight: 200;
+	font-family: 'Ubuntu', serif;
+	color: rgb(199,193,182);
+	margin-top: 29px;
+}
+
+.main-content-headers {
+ 	font-size: 25px; 
+ 	line-height: 30px;
+ 	font-family: 'Playfair Display', serif;
+	color: rgb(98,98,98);
+}
+
+.wrapper{
+	width: 470px;
+	padding: 20px 10px 20px 10px;  
+
+}
