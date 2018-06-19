@@ -1,0 +1,289 @@
+
+/* header*/
+.header-menu {
+	padding-top: 38px;
+}
+
+.header-menu-wrapper {
+	width: 1110px; 
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin:auto;
+}
+
+.navigation-menu {
+	display: flex;
+	flex-direction: row;
+ 	justify-content: space-between; 
+	font-size: 14px;
+    font-family: "OpenSans";
+    color: #0f0101; 
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 466px;
+}
+
+.navigation-list {
+ 	margin: auto;
+}
+
+.navigation-list:hover {
+	color: #48c9b0;
+}
+
+
+/*section one _ Affrordable paris tours*/
+.first {
+	position: relative;
+	background-image: url("../img/bg.png");
+/*	background-filter: brightness(70%); */
+	background-size: cover;
+	background-color: #000000;  
+	background-repeat: no-repeat;
+	height: 601px;
+} 
+
+.first-section {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 1110px;
+    margin: auto;
+}
+
+.header-text {
+	flex-direction: column;
+	justify-content: center; 
+	align-self: flex-start;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.header-name {
+	font-size: 55px;
+	font-family: "Roboto-black", sans-serif;
+	font-weight: bold; 
+	color: #ffffff;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	margin: auto; 
+}
+
+.header-name-small {
+	 font-family: "Roboto-light", sans-serif;
+	 font-size: 24px; 
+}
+
+@keyframes word {
+    50%  {color:#ffffff;}
+    100%  {color:#ff7200;}
+}
+
+.highlight {
+	animation-name: word;
+	color: #ff7200;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+} 
+
+
+.button {
+	background-color: #55a290; 
+	opacity: 0.85;
+	border-style: none;
+	width: 104px; 
+	height: 104px; 
+	color: #ffffff; 
+	font-size: 60px; 
+	padding:0px;
+} 
+
+.button:hover {
+	opacity: 1;  
+}
+
+
+/*second secton_ products & prices*/
+.second {
+	display:  flex;
+	flex-direction: column;
+	margin:  auto;
+	background-color: #e9f0fd;
+}	 
+
+.collection-list {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin:auto;
+	padding: 82px 0px 22px 0px;
+	
+}
+.collection-header {
+	font-size: 48px;
+	color: #515151;
+	text-transform: uppercase;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.collection-header::after {
+	content:" "; 
+	display: block;
+	margin: auto;
+	width: 164px; 
+	height: 7px; 
+	background-color: #48c9b0;
+    margin-top: 32px; 
+} 
+
+.collection-item {
+	margin-right: 30px;
+	width: 255px; 
+	font-size: 0px;
+}
+
+.collection-item:last-child {
+	margin-right: 0px;
+	    
+}
+
+.collection-name-price{
+	display: flex;
+	justify-content: space-between; 
+	text-transform: uppercase;
+	font-family: "Roboto-black", sans-serif;
+	font-weight: bold;
+	font-size: 18px; 
+	line-height: 32px; 
+	color: #ffffff;
+	background-color: #323232;
+}
+
+.collection-item:hover .collection-name-price {
+    background-color: #1abc9c;
+}
+
+
+.collection-name {
+	padding-left: 13px; 
+	margin:0px;
+}
+
+.collection-price{
+	width: 54px; 
+	text-align: center; 
+	margin:0px;
+	background-color: #8c8c8c; 
+}
+
+.collection-item:hover .collection-price {
+    background-color: #7fd9c7;
+}
+
+
+
+/*hidden pannel*/  
+.collection-item-wrapper {
+	position: relative;
+}
+.hidden-container{
+  	visibility: hidden;
+  	width: 235px;
+  	height: 260px;
+ 	background-color: #2f2323;
+  	opacity: 0.5;  
+ 	position: absolute;
+ 	top: 11px;
+ 	left: 10px;
+ 	z-index: 40; 
+ 	
+ }	
+
+.collection-item-wrapper:hover .hidden-container {
+	visibility: visible;
+}
+
+.hidden-icons{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 166px; 
+	margin:auto;
+	position: absolute;
+	top:30%;
+	left:15%;
+	z-index: 80;
+} 
+		
+.icons {
+ 	border-color: #ffffff;
+ 	border-style: solid;
+  	font-size: 30px; 
+ 	width: 50px;
+ 	height: 50px;
+ 	padding: 0;
+ 	background: none; 
+  	margin:auto;
+}
+
+.icons:hover {
+	background:#7fd9c7;
+	transform: scale(1.1);
+}
+
+
+.icon-link {
+	color: #ffffff;
+	opacity:0.8;
+}
+
+.icons:hover .icon-link {
+	opacity: 1;
+}
+
+.icon-link-cart {
+	display: flex;
+	justify-content: space-around;
+	color: #ffffff;
+	opacity:0.8;
+}
+
+.icon-cart-text {
+	font-size: 10px; 
+	font-family: "Roboto-light", sans-serif;
+	text-transform: uppercase;
+}
+
+.cart-box {
+	display: inline-block;
+	width: 166px; 
+	margin-left: 0; 
+	margin-top: 8px; 
+	box-sizing: border-box;
+}
+
+/*footer */
+.footer-info {
+	background-color: #323232;
+	color: rgb(255 255 255);
+	text-align: center;
+	height: 63px;
+}
+
+.footer-text {
+	margin: auto; 
+	padding-top: 20px;
+}
+
+.brand-company{
+    color: #42a391;
+}
+
