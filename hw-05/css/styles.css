@@ -38,7 +38,6 @@
 .first {
 	position: relative;
 	background-image: url("../img/bg.png");
-/*	background-filter: brightness(70%); */
 	background-size: cover;
 	background-color: #000000;  
 	background-repeat: no-repeat;
@@ -50,7 +49,7 @@
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -103,10 +102,19 @@
 	color: #ffffff; 
 	font-size: 60px; 
 	padding:0px;
+	cursor: pointer;
 } 
 
 .button:hover {
 	opacity: 1;  
+}
+
+.opacity-block {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4); 
+	z-index: 2; 
 }
 
 
@@ -194,8 +202,10 @@
 .collection-item-wrapper {
 	position: relative;
 }
+
 .hidden-container{
   	visibility: hidden;
+  	padding: 0; 
   	width: 235px;
   	height: 260px;
  	background-color: #2f2323;
@@ -204,25 +214,35 @@
  	top: 11px;
  	left: 10px;
  	z-index: 40; 
- 	
  }	
+
+.hidden-list-icons {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 166px; 
+	position: absolute; 
+	z-index: 90; 
+	top: 50px; 
+	padding: 35px; 
+}
 
 .collection-item-wrapper:hover .hidden-container {
 	visibility: visible;
 }
 
-.hidden-icons{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 166px; 
+
+
+.hidden-icons {
 	margin:auto;
 	position: absolute;
+	padding: 0;
 	top:30%;
 	left:15%;
 	z-index: 80;
 } 
-		
+
+
 .icons {
  	border-color: #ffffff;
  	border-style: solid;
@@ -238,7 +258,6 @@
 	background:#7fd9c7;
 	transform: scale(1.1);
 }
-
 
 .icon-link {
 	color: #ffffff;
