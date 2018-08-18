@@ -1,32 +1,36 @@
 
 /* header*/
 .header-menu {
-	padding-top: 38px;
+	padding-top: 43px;
 }
 
 .header-menu-wrapper {
-	width: 1110px; 
 	display: flex; 
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	margin:auto;
+	width: 1110px; 
 }
 
 .navigation-menu {
 	display: flex;
-	flex-direction: row;
  	justify-content: space-between; 
+ 	width: 467px;
 	font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "OpenSans-bold", sans-serif;
     color: #0f0101; 
     font-weight: bold;
     text-transform: uppercase;
-    width: 466px;
 }
 
 .navigation-list {
+	margin-left: 30px; 
  	margin: auto;
+} 
+
+.navigation-list:last child {
+	margin-left: 0px; 
 }
 
 .navigation-list:hover {
@@ -34,51 +38,51 @@
 }
 
 
-/*section one _ Affrordable paris tours*/
-.first {
+/*first section class="first-section"< Affordable paris tours >*/
+.first-section {
 	position: relative;
 	background-image: url("../img/bg.png");
-	background-size: cover;
-	background-color: #000000;  
 	background-repeat: no-repeat;
 	height: 601px;
+	width: 1600px; 
+	margin:auto;
 } 
 
-.first-section {
+.section-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 1116px;
+    height: 116px; 
+    margin: auto;
     position: absolute;
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
     z-index: 3;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 1110px;
-    margin: auto;
 }
 
 .header-text {
-	flex-direction: column;
-	justify-content: center; 
-	align-self: flex-start;
-	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
 	color: #ffffff;
 }
 
 .header-name {
-	font-size: 55px;
-	font-family: "Roboto-black", sans-serif;
-	font-weight: bold; 
-	color: #ffffff;
+	font-size: 60px;
+	font-weight: 900;
 	letter-spacing: -2px;
 	text-transform: uppercase;
+	padding-bottom: 20px;
 	margin: auto; 
 }
 
 .header-name-small {
-	 font-family: "Roboto-light", sans-serif;
-	 font-size: 24px; 
+	 font-family: "Roboto", sans-serif;
+	 font-size: 25px; 
+	 font-weight: 200;
+	 text-transform: uppercase;
 }
+
 
 @keyframes word {
     50%  {color:#ffffff;}
@@ -100,8 +104,9 @@
 	width: 104px; 
 	height: 104px; 
 	color: #ffffff; 
-	font-size: 60px; 
-	padding:0px;
+	font-size: 100px; 
+	padding: 0px;
+	margin-top: 20px;
 	cursor: pointer;
 } 
 
@@ -118,12 +123,13 @@
 }
 
 
-/*second secton_ products & prices*/
-.second {
-	display:  flex;
+/*second secton_ products & prices*************************************************************************************/
+.second-section {
+	display: flex;
 	flex-direction: column;
-	margin:  auto;
+	margin: auto;
 	background-color: #e9f0fd;
+	width: 1600px; 
 }	 
 
 .collection-list {
@@ -131,14 +137,18 @@
 	justify-content: space-between;
 	flex-direction: row;
 	margin:auto;
-	padding: 82px 0px 22px 0px;
-	
+	padding: 0px 0px 98px 0px;
 }
+
 .collection-header {
+	font-family: "Roboto";
+	font-weight: 900;
 	font-size: 48px;
 	color: #515151;
 	text-transform: uppercase;
-	margin-top: 100px;
+	margin: 0px;
+	padding-top: 101px; 
+	padding-bottom: 80px; 
 	text-align: center;
 }
 
@@ -151,6 +161,10 @@
 	background-color: #48c9b0;
     margin-top: 32px; 
 } 
+
+.collection-item-wrapper {
+	position: relative;
+}
 
 .collection-item {
 	margin-right: 30px;
@@ -167,7 +181,7 @@
 	display: flex;
 	justify-content: space-between; 
 	text-transform: uppercase;
-	font-family: "Roboto-black", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: bold;
 	font-size: 18px; 
 	line-height: 32px; 
@@ -179,7 +193,6 @@
     background-color: #1abc9c;
 }
 
-
 .collection-name {
 	padding-left: 13px; 
 	margin:0px;
@@ -190,6 +203,7 @@
 	text-align: center; 
 	margin:0px;
 	background-color: #8c8c8c; 
+	font-family: "OpenSans", sans-serif;
 }
 
 .collection-item:hover .collection-price {
@@ -197,22 +211,17 @@
 }
 
 
-
-/*hidden pannel*/  
-.collection-item-wrapper {
-	position: relative;
-}
+/*hidden pannel**************************************************************************************************/  
 
 .hidden-container{
-  	visibility: hidden;
-  	padding: 0; 
-  	width: 235px;
+  /*	visibility: hidden; */
+   	width: 235px;
   	height: 260px;
  	background-color: #2f2323;
   	opacity: 0.5;  
  	position: absolute;
  	top: 11px;
- 	left: 10px;
+ 	left: 11px;
  	z-index: 40; 
  }	
 
@@ -220,81 +229,77 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 166px; 
 	position: absolute; 
-	z-index: 90; 
-	top: 50px; 
-	padding: 35px; 
+	z-index: 90;
+	width: 166px;  
+	padding-left: 35px; 
+	top: 80px; 
+	margin:auto;
 }
 
 .collection-item-wrapper:hover .hidden-container {
 	visibility: visible;
 }
 
-
-
-.hidden-icons {
-	margin:auto;
-	position: absolute;
-	padding: 0;
-	top:30%;
-	left:15%;
-	z-index: 80;
-} 
-
-
 .icons {
  	border-color: #ffffff;
  	border-style: solid;
   	font-size: 30px; 
+  	color: #ffffff;
  	width: 50px;
  	height: 50px;
- 	padding: 0;
+ 	padding: 8px;
  	background: none; 
-  	margin:auto;
-}
+ }
 
 .icons:hover {
-	background:#7fd9c7;
 	transform: scale(1.1);
+	background-color: #1abc9c;
+    opacity: 1;
+    font-size: 30px; 
+  	color: #ffffff;
+    border: transparent;
 }
 
 .icon-link {
 	color: #ffffff;
-	opacity:0.8;
 }
 
 .icons:hover .icon-link {
-	opacity: 1;
-}
+	color: #1abc9c;
+} 
 
 .icon-link-cart {
 	display: flex;
 	justify-content: space-around;
 	color: #ffffff;
-	opacity:0.8;
-}
+} 
 
 .icon-cart-text {
 	font-size: 10px; 
+	color: #ffffff;
 	font-family: "Roboto-light", sans-serif;
 	text-transform: uppercase;
 }
 
 .cart-box {
 	display: inline-block;
+	color: #ffffff;
 	width: 166px; 
 	margin-left: 0; 
 	margin-top: 8px; 
 	box-sizing: border-box;
 }
 
-/*footer */
+
+/*footer *****************************************************************************************/
 .footer-info {
 	background-color: #323232;
 	color: rgb(255 255 255);
 	text-align: center;
 	height: 63px;
+	width: 1600px; 
+	margin: auto; 
 }
 
 .footer-text {
