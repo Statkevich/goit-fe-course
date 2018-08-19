@@ -1,5 +1,5 @@
 
-/* header*/
+/* header********************************************************************************/
 .header-menu {
 	padding-top: 43px;
 }
@@ -38,7 +38,7 @@
 }
 
 
-/*first section class="first-section"< Affordable paris tours >*/
+/*first section class="first-section"< image / Affordable paris tours >*********************/
 .first-section {
 	position: relative;
 	background-image: url("../img/bg.png");
@@ -83,7 +83,6 @@
 	 text-transform: uppercase;
 }
 
-
 @keyframes word {
     50%  {color:#ffffff;}
     100%  {color:#ff7200;}
@@ -95,7 +94,6 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
 } 
-
 
 .button {
 	background-color: #55a290; 
@@ -121,7 +119,6 @@
 	background-color: rgba(0, 0, 0, 0.4); 
 	z-index: 2; 
 }
-
 
 /*second secton_ products & prices*************************************************************************************/
 .second-section {
@@ -164,6 +161,7 @@
 
 .collection-item-wrapper {
 	position: relative;
+
 }
 
 .collection-item {
@@ -210,15 +208,14 @@
     background-color: #7fd9c7;
 }
 
-
 /*hidden pannel**************************************************************************************************/  
 
 .hidden-container{
-  /*	visibility: hidden; */
+  	visibility: hidden;
    	width: 235px;
   	height: 260px;
- 	background-color: #2f2323;
-  	opacity: 0.5;  
+ 	background-color: #737373;
+    opacity: 0.5;  
  	position: absolute;
  	top: 11px;
  	left: 11px;
@@ -253,45 +250,51 @@
  }
 
 .icons:hover {
-	transform: scale(1.1);
-	background-color: #1abc9c;
+	color: #ffffff;
+	background: #1abc9c;
     opacity: 1;
-    font-size: 30px; 
-  	color: #ffffff;
     border: transparent;
 }
 
 .icon-link {
-	color: #ffffff;
+	color: #ffffff; 
+
 }
 
-.icons:hover .icon-link {
-	color: #1abc9c;
-} 
+.icon-link:hover {
+	color: #ffffff;
+} 									
+
+/* cart container **************************************************/
+.icon-cart-box {
+    border-color: #ffffff;
+ 	border-style: solid;
+  	color: #ffffff;
+ 	width: 166px;
+ 	height: 50px;
+ 	margin-top: 7px;
+ 	background: none; 
+ }
+
+.icon-cart-box:hover  {
+   background: #323232; 
+   opacity: 1;
+}
 
 .icon-link-cart {
-	display: flex;
-	justify-content: space-around;
-	color: #ffffff;
+	color: #ffffff; 
+	font-size: 30px; 
+	text-align: center;
 } 
 
-.icon-cart-text {
-	font-size: 10px; 
+ .icon-cart-text {
+	display: inline-block; 
+	font-size: 14px; 
 	color: #ffffff;
-	font-family: "Roboto-light", sans-serif;
+	font-family: "OpenSans", sans-serif;
 	text-transform: uppercase;
 }
-
-.cart-box {
-	display: inline-block;
-	color: #ffffff;
-	width: 166px; 
-	margin-left: 0; 
-	margin-top: 8px; 
-	box-sizing: border-box;
-}
-
-
+ 
 /*footer *****************************************************************************************/
 .footer-info {
 	background-color: #323232;
