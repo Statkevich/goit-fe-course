@@ -1,14 +1,19 @@
 /* header*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container {
-	width: 1213px;
+	width: 1200px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 }
 
 .header-wrapper {
-	padding-top: 38px;
+	padding-top: 40px;
 	display: flex;
 	justify-content: space-between;
 	margin: 0px;
@@ -21,7 +26,10 @@
 	justify-content: space-between;
 	list-style: none;
 	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
+	line-height: 30px;
+	font-weight: 600; 
 	color: #b0e9de; 
 }
 
@@ -33,11 +41,18 @@
 	margin-right: 0px; 
 } 
 
+.navigation-item:hover {
+	color: #f38181;
+	border-bottom: 2px #f38181 solid; 
+
+}
+
 
 /*main*/
 
 .main {
-	margin-top: 26px; 
+	width: 1200px; 
+	padding-top: 114px; 
 	margin: auto; 
 }
 
@@ -49,6 +64,7 @@
 }
 
 .services-header {
+	text-align: center;
 	
 }
 
@@ -59,27 +75,226 @@
 	width: 60px; 
 	height: 2px; 
 	background-color: #f38181;
-    margin-top: 45px; 
+    margin-top: 40px; 
 }
 
-.services-list {
-	list-style: none;
+.services-header-cursive{
+	font-family: "Kaushan Script", cursive;
+	font-size: 24px; 
+	font-weight: 500; 
+}
+
+.services-header-upper {
+	font-family: "Montserrat", sans-serif; 
+	font-weight: bold; 
+	font-size: 30px; 
+	text-transform: uppercase;
+}
+
+/*** services -list *********************************/ 
+.services-list { 
 	display: flex;
 	flex-wrap: wrap; 
+    justify-content: space-between;
+    padding-top: 66px;
+	list-style: none; 
+
 }
  
- 
+.services-item { 
+	display: flex;
+	justify-content: space-between;
+	width: 400px;  
+	height: 171px;
+ }
 
-/*team section*/
+.services-item-textbox{
+	padding-left: 29px; 
+}
+
+
+h3 {
+	font-family: "Montserrat", sans-serif; 
+	font-weight: 400; 
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #333333; 
+
+} 
+.services-item-description { 
+	font-family: "Roboto", sans-serif; 
+	font-size: 15px;
+	line-height: 24px;  
+	color: #999999;
+	padding-top: 20px; 
+ 
+}
+
+
+/*team wrapper ********************************************/
 
 .team-wrapper {
 	display: flex;
-	display: column; 
+	flex-direction: column; 
+	text-align: center;
 } 
+
+.team-header::after {
+	content:" "; 
+	display: block;
+	margin: auto;
+	width: 60px; 
+	height: 2px; 
+	background-color: #f38181;
+    margin-top: 40px; 
+}
+
+.team-header-text {
+	font-family: "Roboto", sans-serif; 
+	font-size: 15px; 
+	line-height: 24px; 
+	text-align: center; 
+	color: #999999; 
+	padding-top: 46px; 
+}
 
 .team-list {
 	list-style: none;
 	display: flex;
+	padding-top: 96px; 
+
+} 
+
+.team-card {
+	margin-right: 30px; 
+	position: relative;
+
+} 
+
+.team-list:last-child {
+	margin-right: 0px; 
+}  
+
+.team-name {
+	font-family: "Montserrat", sans-serif; 
+	font-size: 14px; 
+	text-transform: uppercase;
+	color: #333333; 
+	margin-top:29px;  
+}
+
+.team-occupation{ 
+	font-family: "Roboto", sans-serif; 
+	font-weight: 200; 
+	font-style: italic; 
+	font-size: 14px; 
+	color: #b3b3b3; 
+	margin-top: 13px; 
+ }
+
+.invisible-navigation{ 
+    visibility: hidden;  
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(to bottom, #ee8a8a, #edd587); 
+    opacity: 0.9; 
+    position: absolute; 
+    top: -10px;
+    left: -10px;
+    box-shadow: 10px 10px 0px 0px #95e1d3;
+     
+}
+
+.team-card:hover .invisible-navigation{
+   visibility: visible; 
+   transition-duration: 200ms; 
+   transition-timing-function: linear; 
+} 
+
+.icons-box { 
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 196px;
+	right: 69px; 	
+	z-index: 10;
+	width: 224px;  
+
+}
+
+.social-icon{ 
+ 	display: flex; 
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 55px; 
+ 	height: 55px; 
+ 	background: #fce38a;
+ 	border: none;
+}
+
+.social-icon:hover {
+	background: #95e1d3;	
+    transition-duration: 200ms; 
+    transition-timing-function: linear; 
+}
+
+/******************footer*******************/ 
+
+.footer {
+    margin-top: 86px; 
+	border-top: 2px #e5e5e5 solid;
+}
+
+.footer-container {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:11px; 
+    padding-bottom: 15px; 
 	
+} 
+
+.footer-text { 
+	display: flex;
+	align-items: center; 
+	font-family: "Montserrat", sans-serif; 
+	font-size: 14px; 
+} 
+
+.footer-text-agy {
+	color: #f6a1a1;
+	font-family: "Montserrat", sans-serif; 
+	font-size: 14px; 
+} 
+
+.footer-form-email { 
+	display:flex; 
+	justify-content:  ;
+	 
+} 
+
+.input {
+	font-family: "Roboto", sans-serif; 
+	font-weight: 400; 
+	font-style: italic;
+	width: 229px;  
+	border: 2px #e5e5e5 solid;
+	border-right: none; 
+}  
+
+.input::placeholder {
+	color: #e5e5e5; 
+}
+
+.button-subscribe {
+	padding: 11px 34px;  
+	font-family: "Montserrat", sans-serif; 
+	font-weight: 600; 
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #95e1d3; 
+	border: none;
+
 } 
 
