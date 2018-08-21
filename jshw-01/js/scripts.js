@@ -11,7 +11,7 @@ if (userLogin === null) {
 	alert (canceled);
 } else if (userLogin !== adminLogin) {
 	alert (denied); 
-} else ; {
+} else {  
 const  userPassword = prompt ('Введите пароль')
 console.log ('Пароль', userPassword)
 if (userPassword === null) {
