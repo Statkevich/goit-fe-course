@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}  
+/* montserrat-800 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v12-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+       url('../fonts/montserrat-v12-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v12-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v12-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v12-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v12-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* roboto-slab-700 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-slab-v7-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'),
+       url('../fonts/roboto-slab-v7-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-slab-v7-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-slab-v7-latin-700.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+} 
+
+/* roboto-slab-300 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-slab-v7-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'),
+       url('../fonts/roboto-slab-v7-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-slab-v7-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-slab-v7-latin-300.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-slab-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/roboto-slab-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-slab-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-slab-v7-latin-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+} 
+
+.container {
+	width: 1400px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+/*********************************************header********************************************************/ 
+.header-wrapper {
+	width: 940px; 
+	padding-top: 44px;
+	display: flex;
+	justify-content: space-between;
+	margin: auto; 
+	align-items: center;
+}
+
+.navigation-menu {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px; 
+	line-height: 41px; 
+	color: #898989; 
+} 
+
+.navigation-item {
+	margin-right: 40px; 
+}
+
+.navigation-item:last-child {
+	margin-right: 0px; 
+} 
+
+.navigation-item:hover {
+	color: #fed751;
+} 
+
+/**************************************************services-section************************************************/
+.services-section {
+	margin-top: 129px;
+	display: flex;
+	flex-direction: column;
+} 
+
+.services-title { 
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 700; 
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 75px;  
+	letter-spacing: -2.5;
+	color: #222222; 
+	text-align: center;  
+} 
+
+.services-subtitle{
+	font-family: "﻿Roboto Slab", sans-serif; 
+	font-weight: 300; 
+	font-style: italic; 
+	font-size: 16px;  
+	color: #777777; 
+	text-align: center; 
+} 
+
+.services-description{
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	list-style: none; 
+	margin: auto;
+	margin-top: 80px; 
+	padding-bottom: 123px; 
+}
+
+.services-description-list{
+	width: 313px; 
+}
+
+.img-box{ 
+	height: 66px; 
+	width: 66px; 
+	border-radius: 100px; 
+	border: 2px #fed751 solid; 
+    position: relative;
+    margin: auto;
+} 
+
+.img {
+	display: block;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+} 
+
+.description-title {
+	font-family: "Montserrat", sans-serif; 
+	font-weight: 700; 
+    font-size: 18px; 
+	line-height: 75px; 
+	letter-spacing: -2.5;
+	color: #222222; 
+    text-align: center;  
+}
+
+.services-description-text { 
+	font-family: "﻿Roboto Slab", sans-serif; 
+	font-weight: 300; 
+	font-size: 14px;  
+	letter-spacing: -2.5;
+	color: #777777; 
+	text-align: center; 
+}
+
+/*****************************contacts-section*****************************************************************/
+
+.contacts-section {
+ 	padding-top: 109px; 
+	background: url(../img/map.png) no-repeat #222222; 
+	background-position: right bottom;
+	margin: auto;
+ } 
+
+ .contact-title { 
+	font-family: "Roboto Slab", sans-serif;
+	font-weight: 700; 
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 75px;  
+	color: #ffffff; 
+	text-align: center;  
+}
+
+.contact-subtitle {
+	font-family: "﻿Roboto Slab", sans-serif; 
+	font-weight: 300; 
+	font-style: italic; 
+	font-size: 16px;  
+	color: #777777; 
+	text-align: center; 
+}  
+
+.input-box {
+	display: flex;
+	width: 950px; 
+	padding-top: 78px; 
+	margin: auto;
+} 
+
+.input-col1 {
+	display: flex;
+	width: 457px; 
+	flex-direction: column;
+} 
+
+.input {
+	margin-bottom: 25px; 
+	margin-right: 30px; 
+	height: 52px; 
+	border-radius: 2px;
+	border: 2px  #cccccc solid; 
+}
+
+.input:last-child {
+	margin-bottom: 0px; 
+}
+
+.textarea {
+	width: 457px;
+	height: 206px;  
+}
+
+input {
+	border-radius: 2px; 
+}
+
+input::placeholder {
+	font-family: "Montserrat", sans-serif; 
+	font-size: 14px; 
+	font-weight: 700; 
+	color: #cdcdcd;
+	text-transform: uppercase;
+}
+
+textarea::placeholder {
+	font-family: "Montserrat", sans-serif; 
+	font-size: 14px; 
+	font-weight: 700; 
+	color: #cdcdcd;
+	text-transform: uppercase;
+} 
+
+.input:valid {
+   outline: 2px solid green;  
+} 
+ 
+.input:invalid {
+   outline: 2px solid red; 
+}
+ 
+textarea:valid {
+   outline: 2px solid green;  
+} 
+ 
+textarea:invalid {
+   outline: 2px solid red; 
+}
+
+/******************************************** button*********************************************/
+.button-box {
+	width: 950px;
+	padding-top: 29px; 
+	padding-bottom: 116px; 
+	margin: auto;
+    text-align: center; 
+}
+
+.button {
+    border-radius: 2px; 
+    padding: 26px 48px; 
+    background-color: #fed136; 
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 700; 
+    font-size: 18px; 
+    text-transform: uppercase; 
+    color: #ffffff; 
+    border-style: none;
+    margin: auto;
+} 
