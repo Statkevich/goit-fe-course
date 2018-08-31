@@ -1,0 +1,82 @@
+/**************************media for min 768px *******************************/
+
+@media (min-width: 768px) {
+
+.container {
+    min-width: 768px;
+}
+
+.header-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: center;
+	min-width: 672px;  
+	padding-top: 50px;
+} 
+
+.companyname {
+	padding: 0;
+	margin: 0;
+
+}
+
+.welcome-title {
+	padding-top: 160px; 
+	font-size: 52px;
+	
+}
+
+.welcome-subtitle {
+	font-size: 24px;	
+}
+
+.welcome-button {
+	background-color: #ff4e50; 
+	padding: 14px 23px;
+}
+
+.container-header-welcomesection {
+	min-height: 700px; 
+} 
+
+.partner-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 474px; 
+	margin:auto;
+    
+} 
+
+
+} 
+
+/**************************media for min 1440px *******************************/
+
+@media (min-width: 1440px) {
+
+.container {
+	min-width: 1440px;
+} 
+
+.header-wrapper {
+	width: 947px; 
+	margin: auto;
+	align-content: center;
+}
+
+.partner-list {
+    min-width: 947px;
+ }
+
+.header-wrapper {
+	display: flex;
+	direction: row; 
+}
+ 
+ .partner-button{
+	margin-top: 40px;
+}
+}

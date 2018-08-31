@@ -1,6 +1,222 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}  
+
+a {
+	text-decoration: none; 
+}
+
+/*********************** min width 320px*********************************/
+.container {
+	min-width: 320px;   
+	margin: 0 auto;
+	text-align: center;
 } 
+
+.container-header-welcomesection {
+	background: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center; 
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 542px; 
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 88%; 
+	margin: auto;
+	text-align: center;
+}
+
+.navigation-menu {
+	font-family: Montserrat, sans-serif; 
+	font-size: 14px; 
+	font-weight: 700; 
+	color: #ffffff; 
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}  
+
+.navigation-item {
+	padding: 13px 21px 13px 21px; 
+}
+
+.navigation-item:hover {
+	border: 2px #ffffff solid;  
+	border-radius: 20px; 
+    font-family: Montserrat, sans-serif; 
+	font-size: 14px; 
+	font-weight: 300; 
+}
+
+
+.companyname { 
+	font-family: Montserrat, sans-serif; 
+	font-size: 20px;
+	font-weight: 700; 
+	letter-spacing: 5; 
+	text-transform: uppercase; 
+	margin:auto;
+	padding-top: 120px; 
+} 
+
+.companylink {
+	color: #ffffff; 
+} 
+
+.welcome-title {
+	font-family: Montserrat, sans-serif; 
+	font-size: 30px;
+	font-weight: 700; 
+	text-transform: uppercase; 
+	margin:auto;
+	padding-top: 40px; 
+	color: #ffffff; 
+	text-align: center;
+}
+
+.welcome-subtitle {
+	font-family: Roboto, sans-serif; 
+	font-size: 18px;
+	font-weight: 100; 
+	color: #ffffff;
+	width: 68%; 
+	margin:auto;
+	padding-top: 21px; 
+	text-align: center;
+} 
+
+.welcome-button {
+	background-color: #ff4e50; 
+	padding: 14px 55px;
+	border-radius: 20px; 
+	border: none;
+	margin: auto;
+	margin-top: 10px;
+	display: flex; 
+}	
+
+.welcome-button-link{ 
+ 	font-family: Montserrat, sans-serif; 
+	font-size: 14px;
+	font-weight: 700; 
+ 	color: #ffffff; 
+}
+
+/**************************partner-section *****************************************************/ 
+
+.partner-section{ 
+	margin: auto; 
+	text-align: center; 
+} 
+
+.partner-title {
+	font-family: Montserrat, sans-serif; 
+	font-size: 22px;
+	font-weight: 700; 
+	padding-top: 70px; 
+	padding-bottom: 33px; 
+}
+
+.partner-item {
+	max-width:312px;
+	height: 254px; 
+    margin: 0 auto;
+	list-style: none;
+	position: relative; 
+}
+
+.img {
+	width: 123px;
+	height: 122px;
+	border-radius: 50%;
+}
+
+.icon {
+	display: block;
+	width: 33px;
+	height: 33px; 
+	position: absolute;
+	right: 29%;
+    top: 39%;
+    border: #ffffff 3px solid;
+    border-radius: 50%;
+}
+ 
+
+.icon-1 {
+	background-color: #ff4e50;
+	background-image: url(../img/img1_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+	
+}
+
+.icon-2 {
+	background-color: #1cd7ad;
+	background-image: url(../img/img2_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-3 {
+	background-color: #ffa507;
+	background-image: url(../img/img3_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-4 {
+	background-color: #4e73db;
+	background-image: url(../img/img4_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.partner-name {
+	font-family: Montserrat, sans-serif; 
+	font-size: 14px;
+	font-weight: 700; 
+ 	color: #333333; 
+ 	padding-top: 21px;
+ }
+
+.partner-description{ 
+    font-family: Roboto, sans-serif; 
+	font-size: 14px;
+	font-weight: 200; 
+	width: 225px; 
+	margin:auto;
+	padding-top: 23px; 
+	text-align: center;
+	color: #8f8f8f;
+ }
+
+.partner-button{ 
+	background-color: white; 
+	padding: 14px 55px;
+	border-style: solid;
+	border-radius: 20px; 
+	border-color: #ff4e50;
+	margin: auto;
+	margin-top: 35px; 
+	margin-bottom: 57px; 
+	display: flex; 
+}	
+
+.partner-button-link{ 
+ 	font-family: Montserrat, sans-serif; 
+	font-size: 14px;
+	font-weight: 700; 
+ 	color: #ff4e50; 
+} 
+
 
